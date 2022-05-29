@@ -1,19 +1,16 @@
 <?php
 
-
+// NEVEIKIA SU PHP bet su JS viskas ok
 echo '<pre>';
 function removeEveryOther($array) {
     $newA = [];
     $size = count($array);
     for ($i = 0; $i < $size; $i +=2) {
-        // array_splice($array, $i, 1);
         // unset($array[$i]);
         $newA[] = $array[$i];
     }
-    // print_r($array);
     print_r($newA);
-
-    // return $newA;
+    return $newA;
 }
 
 
